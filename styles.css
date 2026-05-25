@@ -1,0 +1,36 @@
+.back-img {
+			width: 100%;
+			height: 100%;			
+		}
+		.fore-img {
+			width: 110px;	
+			position: absolute;
+			z-index: 20;
+			width: 200px;
+			opacity: 0.4; 
+		}
+		.fore-img:hover {
+			opacity: 1;
+			cursor: pointer;
+		}
+		.block {
+			color: white;
+			border: 5px solid rgba(200, 200, 200, .3);
+			border-radius: 15px;
+			width: 300px;
+			padding: 10px;
+			z-index: 10;
+			position: absolute;
+			bottom: 100px;
+			right: 100px;
+		}
+		.v-title {
+			color: yellow;
+			font-family: arial;
+			font-size: 30px;
+		}
+		.v-title:hover {
+			color: light-yellow;
+			font-weight: bold;
+			cursor:pointer;
+		}

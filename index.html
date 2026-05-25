@@ -1,0 +1,83 @@
+<html>
+<head>
+
+<title>Папараць-кветка</title>
+
+<img class="back-img" src="img/forest.gif">
+
+<link rel="stylesheet" href="styles.css">
+
+
+<style>
+		a {
+			color: lightblue;
+		}
+		a:hover {
+			color: red;
+			font-weight: bold;			
+		}
+		p:hover {
+			color: gray;
+			cursor: pointer;
+		}
+
+</style>
+
+<script>
+		var fl_status = 1;
+		var fl_height = 50;
+		
+		function start_tick() {
+			setInterval(tick, 10);
+		}
+		
+		function tick() {
+			if (fl_height == 300) fl_status = 0;				
+			if (fl_height == 800) fl_status = -1;
+			fl_height += fl_status;
+			document.getElementById("pap").height = fl_height;
+		}
+		
+		function grow_flower(){
+			fl_height = 301;
+			fl_status = 1;
+		}
+	</script>
+
+
+
+</head>
+
+<body bgcolor="black">
+
+onload="start_tick()" (<body bgcolor="black" onload="start_tick()">)
+
+
+
+	<img id="pap" class="fore-img" src="img/flower.gif" style="left:30px; bottom: 20px" height="300" onclick="grow_flower()">
+
+	<div class="block">
+		<div class="v-title">Папараць-кветка</div>
+		<div class="v-body">
+			<p>Вабяць азёрныя далi</br></p>
+			<p>Цiхай вячэрняй парой,</br></p>
+			<p>Дзе мы аднойчы шукалi</br></p>
+			<p>Папараць-кветку з табой.</br></p>
+			<p>Зоры з табой мы лiчылi</br></p>
+			<p>Каля азёрнай вады,</br></p>
+			<p>Кветкай чароўнай, дзяўчына,</br></p>
+			<p>Стала ты мне назаўжды.</br></p>
+<p>
+<a href="page.html" target="_blank">...чытаць далей</a>
+</p>
+
+		</div>
+		</div>
+		
+
+
+
+</body>
+
+</html>
+
